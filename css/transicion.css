@@ -1,0 +1,113 @@
+/*Transiciones*/
+/*ejemplo 1*/
+#container-divs{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .div-1, .div-2, .div-3{
+    padding: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background: rgb(113, 218, 191);
+    transition: width 2s, height 2s, background 3s;
+    filter: drop-shadow(0 0 10px rgba(181, 194, 166, 0.8));
+  }
+  .div-1:hover, .div-2:hover, .div-3:hover{
+    width: 250px;
+    height: 250px;
+    background: rgb(27, 81, 112);
+  }
+  .img-caja{
+    width:100px;
+    opacity: 1;
+    transition: opacity 1s, width 2s;
+  }
+  
+  .img-caja:hover{
+    width:200px;
+    opacity: 0;
+  }
+  .heroe{ 
+    position: relative;
+    top: -100px;
+    width:100px;
+    opacity: 0;
+    transition: opacity 1s, width 2s;
+  }
+  .heroe:hover,
+  .img-caja:hover{
+    width:150px;
+    opacity: 1;
+  }
+  
+  /*Ejemplo 2*/
+  .trans-sect2 p{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 900%;
+    color: indianred;
+    transition: color 1s;
+  }
+  
+  .trans-sect2 p:hover{
+    color: dodgerblue;
+  }
+
+
+.btn1 {
+    
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 100%;
+    color: rgb(0, 0, 0);
+    border: 5px solid #ffc527;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+  }
+  
+  .btn1:hover {
+    background-color:  #ffc527;
+    color: rgb(255, 255, 255);
+  }
+
+  /*Ejemplo 4*/
+ .cuadrado{
+    background: #27ff6b;
+    width:300px;
+    height: 300px;
+    margin: auto;
+    clip-path: circle(50% at top left);
+    transition-property: clip-path;
+    transition-duration:  2s;
+ }
+
+ .cuadrado:hover{
+    clip-path:  circle(150% at top left);
+    background: #055c21;
+ }
+
+ /*Ejemplo 5*/
+ .link1 {
+    display: inline-block;
+    background: #abb1f4;
+    color: #222;
+    padding: 8px 16px;
+  text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+  
+  .link1:hover {
+    background: #fff;
+    background-color: rgb(247, 141, 162);
+    color: rgb(8, 8, 8);
+    padding: 32px;
+    border: 1px solid darkred;
+  }

@@ -1,0 +1,168 @@
+/*Animación*/
+/*Ejemplo 1*/
+
+
+
+@keyframes movimiento1 {
+    0%  {left:200px; top:0px;}
+    25%  {left:200px; top:200px;}
+    50%   {left:-200px; top:200px;}
+    75%   {left:-200px; top:0px;}
+    100% {left:200px; top:0px;}
+}
+
+section{
+  margin: auto;
+  text-align: center;
+}
+.sect1{
+    height: 400px;
+}
+.robot1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: movimiento1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(
+        0 0 10px rgba(60, 150, 156, 0.623)
+    );
+
+}
+
+
+/*Ejemplo 2*/
+
+@keyframes color-de-letra {
+  0%   {color: rgb(48, 175, 175);}
+  14%  {color: rgb(64, 194, 144);}
+  28%  {color: rgb(184, 182, 59);}
+  42%   {color: rgb(204, 124, 70);}
+  56%   {color: rgb(175, 57, 57);}
+  70% {color: rgb(150, 48, 150);}
+  84% {color: rgb(75, 48, 150);}
+  100% {color: rgb(48, 175, 175);}
+
+}
+
+
+.sect2 p{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 900%;
+  animation-name: color-de-letra;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/*Ejemplo 3*/
+
+@keyframes colorYMovimiento-de-letra {
+  0%   {color: rgb(48, 175, 175); left:0px; top:-30px;}
+  50%  {color: rgb(136, 64, 194); left:0px; top:200px;}
+  100% {color: rgb(48, 175, 175); left:0px; top:-30px;}
+}
+
+.sect3{
+  height: 400px;
+}
+
+.sect3 p{
+  position: relative;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 600%;
+  animation-name: colorYMovimiento-de-letra;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+/*Ejemplo 4*/
+@keyframes color-de-fondo {
+  0%   {background-color: rgb(253, 227, 109);}
+  50%  {background-color: rgb(61, 61, 59);}
+  100% {background-color: rgb(253, 227, 109);}
+
+}
+
+.container-imagen{
+  margin: auto;
+  width: 700px;
+  height: 240px;
+  animation-name: color-de-fondo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border: 10px solid rgb(223, 240, 240);
+  border-radius: 100px;
+  filter: drop-shadow(
+        0 0 10px rgba(53, 52, 52, 0.8)
+    );
+}
+
+.dia, .noche {
+  position: relative;
+  width: 200px;
+}
+
+.dia {
+  animation-name: mostrar-dia;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(
+        0 0 10px rgba(53, 52, 52, 0.8)
+    );
+}
+
+
+.noche {
+  
+  animation-name: ocultar-noche;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(
+        0 0 10px rgba(53, 52, 52, 0.8)
+    );
+
+}
+
+
+
+@keyframes mostrar-dia {
+  0%   {color: rgb(48, 175, 175); opacity: 1; left:-300px; top:15px;}
+  50%  {color: rgb(136, 64, 194); opacity: 0; left:300px; top:15px;}
+  100% {color: rgb(48, 175, 175); opacity: 1; left:-300px; top:15px;}
+}
+
+@keyframes ocultar-noche {
+  0%  {color: rgb(48, 175, 175); opacity: 0; left:-300px; top:15px;}
+  50% {color: rgb(136, 64, 194); opacity: 1; left: 300px; top:15px;}
+  100% {color: rgb(48, 175, 175); opacity: 0; left:-300px; top:15px;}
+  
+}
+
+/*Ejemplo 5*/
+@keyframes size {
+  0%  {transform: scale(1);}
+  50%  {transform: scale(1.2);}
+  100%   {transform: scale(1);}
+}
+
+
+.container-imagen2{
+  height: 350px;
+  animation-name: size;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.groot{
+  top: 200px;
+  filter: drop-shadow(
+        0 0 10px rgba(53, 52, 52, 0.8)
+    );
+}
+
+
+

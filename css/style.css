@@ -1,0 +1,48 @@
+/*General Style*/
+body{
+  text-align: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='122' height='122' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='5.3' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='121' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+h1{
+  padding: 20px;
+}
+main{
+  padding: 20px;
+}
+.contenido-inicio{
+  padding-top: 50px;
+  padding-bottom: 8%;
+}
+
+footer{
+  height: 80px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  background-color: rgb(27, 25, 25);
+}
+#menu{
+  background-color: olive;
+  
+}
+
+.item_1{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 500%;
+  text-decoration: none;
+  color:  olive;
+}
+
+.titulo-de-pagina{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 500%;
+  text-decoration: none;
+  color:  olive;
+}
+

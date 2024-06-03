@@ -1,0 +1,52 @@
+p{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 900%;
+    transition: color 1s;
+    animation-iteration-count: infinite;
+
+}
+
+
+/*EJEMPLO 1*/
+.animate__animated.animate__tada {
+     
+    color: rgb(61, 181, 202);
+}
+
+/*EJEMPLO 2*/
+.animate__animated.animate__bounceIn {
+     
+    color: rgb(5, 5, 5);
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 700%;
+    transition: color 1s;
+    animation-iteration-count: infinite;
+    border: 0;
+    border-radius: 50px;
+    background-color: rgb(185, 115, 115);
+    padding: 40px;
+}
+
+/*EJEMPLO 3*/
+.animate__animated.animate__fadeInTopLeft {
+     
+    color: rgb(201, 176, 50);
+}
+
+/*EJEMPLO 4*/
+.animate__animated.animate__fadeOutBottomRight {
+     
+    color: rgb(179, 69, 201);
+}
+
+/*EJEMPLO 5*/
+.animate__animated.animate__flipOutY {
+     
+    transition: color 1s;
+    animation-iteration-count: infinite;
+}
+
